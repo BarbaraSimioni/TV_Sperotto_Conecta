@@ -1,0 +1,91 @@
+body {
+    background-color: #D9D9D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.aba-navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #2C2C2C;
+    width: 280px;
+    height:100vh;
+}
+
+.menu-logo img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    max-width: 110px;
+    height: auto;
+    display: block;
+}
+
+.usuario-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.usuario-info i {
+    font-size: 80px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.nome-usuario {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.departamento {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.botoes-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.botoes-menu li a {
+    display: flex;
+    gap: 10px;
+    background-color: #4CADCE;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 16px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.botoes-menu li a:hover {
+    background-color: #2289ac;
+}
+
+.rodape-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape-menu a i {
+    transform: scaleX(-1);
+}
