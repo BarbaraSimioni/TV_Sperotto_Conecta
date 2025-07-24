@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://www.sperotto.com.br/wp-content/uploads/2019/02/jakub-gorajek-173097.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.caixa-desfoque {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);-webkit-backdrop-filter: blur(3px); /*Navegador Safari*/
+    z-index: 1;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    height: 600px;
+    width: 990px;
+    margin: auto;
+    top: 50%;
+    transform: translatey(-50%);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.lado-esquerdo {
+    width: 40%;
+    background-color: rgba(47, 177, 222, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 40px;
+}
+
+.lado-esquerdo .logo {
+    max-width: 90%;
+}
+
+.lado-direito {
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 60px 80px;
+}
+
+.wrapper .lado-direito h1 {
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.wrapper .lado-direito .caixa-de-entrada {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.caixa-de-entrada h3 {
+    font-weight: 160;
+    font-size: 15px;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+.caixa-de-entrada input {
+    width: 100%;
+    height: 25px;
+    background: white;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.caixa-de-entrada input::placeholder{
+    color: rgba(0,0,0, 0.25);
+}
+
+.caixa-de-entrada i {
+    position: absolute;
+    right: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    top: 60%;
+    transform: translateY(-40%);
+}
+
+.wrapper .lado-direito .lembrar-esquecer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: -15px 0 15px;
+}
+
+.lembrar-esquecer label input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    accent-color: #fff;
+    margin-right: 3px;
+    cursor: pointer;
+    margin-top: 1.5px;
+}
+
+.lembrar-esquecer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 1.5px;
+}
+
+.lembrar-esquecer a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .lado-direito .botao {
+    width: 75%;
+    height: 45px;
+    margin: 10px auto;
+    display: block;
+    background: #2b3133;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.wrapper .lado-direito .botao-novo {
+    width: 75%;
+    height: 45px;
+    margin: 10px auto;
+    display: block;
+    background: #2fb1de;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 60px;
+
+}
+
+.wrapper .lado-direito .botao-novo:hover {
+    background-color: #2a90b3;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.wrapper .lado-direito .botao:hover {
+    background-color: #212729;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
