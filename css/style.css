@@ -1,201 +1,226 @@
+
 body {
-    background-color: #D9D9D9;
+  background-color: #D9D9D9;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*Menu lateral*/
 .aba-navegacao {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    background-color: #2C2C2C;
-    width: 280px;
-    height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #2C2C2C;
+  width: 280px;
+  height: 100vh;
 }
 
 /*Superior Menu*/
 .menu-logo img {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    max-width: 105px;
-    height: auto;
-    display: block;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  max-width: 105px;
+  height: auto;
+  display: block;
 }
 
 .usuario-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
 .usuario-info i {
-    font-size: 70px;
-    margin-bottom: 10px;
-    padding-top: 50px;
+  font-size: 70px;
+  margin-bottom: 10px;
+  padding-top: 50px;
 }
 
 .nome-usuario {
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .departamento {
-    font-size: 12px;
-    font-weight: 300;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 /*Botões Menu*/
 .botoes-menu {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    margin-top: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .botoes-menu li a {
-    display: flex;
-    gap: 10px;
-    background-color: #4CADCE;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 12px;
-    padding: 16px;
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, color 0.3s ease;
+  display: flex;
+  gap: 10px;
+  background-color: #4CADCE;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 16px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .botoes-menu li a:hover {
-    transform: scale(1.1);
-    background-color: #2f93b4;
+  transform: scale(1.1);
+  background-color: #2f93b4;
 }
 
 /*Rodapé Menu*/
 .botao-sair {
-    display: flex;
-    align-items: center;
-    color: white;
-    gap: 8px;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 8px;
+  text-decoration: none;
 }
 
 .rodape-menu a i {
-    transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 /*Conteúdo Principal*/
 main {
-    margin-left: 280px;
-    padding: 20px;
+  margin-left: 280px;
+  padding: 20px;
 }
 
 /*Cabeçalho Principal*/
-section.geral .cabecalho{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 25px;
-    align-items: center;
-/*Linha divisória*/
-    border-bottom: 2.5px solid #000;
+section.geral .cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  align-items: center;
 }
 
 .cabecalho h1 {
-    font-size: 50px;
-    font-weight: 400;
+  font-size: 50px;
+  font-weight: 400;
 }
 
 /*Botão de Play e Lixeira*/
-.elementos-cabecalho  {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    margin-right: 30px;
-    color: #ffffff;
-    background-color: #2289AC;
-    font-size: 30px;
-    padding: 15px 50px;
-    border-radius: 8px;
+.elementos-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-right: 30px;
+  color: #ffffff;
+  background-color: #2289AC;
+  font-size: 30px;
+  padding: 15px 50px;
+  border-radius: 8px;
 }
 
 .elementos-cabecalho i {
-    cursor: pointer;
-    transition: color 0.3s ease;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .elementos-cabecalho i:hover {
-    color:rgb(182, 182, 182);
+  color: rgb(182, 182, 182);
 }
 
-section.slides-RH h2 {
-    display: flex;
-    margin-top: 8px;
-    margin-bottom: 5px;
-    font-weight: 500;
+/*Linha divisória*/
+.linha-setor {
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 4px 0;
+  width: 100%;
 }
-/*Cards de Slide*/
+/*Setor de Cards*/
+.bloco-setor {
+  margin-top: 5px;
+}
+
+.bloco-setor h2 {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Cards*/
+.container-cards {
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 292px;
-    height:220px;
-    background-color: #ffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 292px;
+  height: 220px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
+
 /*Cabeçalho do Card*/
 .topo-card {
-    display:flex;
-    justify-content: space-between;
-    padding: 12px 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 12px;
 }
 
 .topo-card .acoes {
-    display: flex;
-    gap: 8px;
-    font-size: 12px;
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
 }
 
-.topo-card .acoes i {
-    cursor: pointer;
-}
 /*Rodapé do Card*/
 .rodape-card {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 130px;
-    padding: 10px;
-    background-color:#67BCD9;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  padding: 10px;
+  background-color: #67BCD9;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .rodape-card h3 {
-    font-size: 15px;
-    word-wrap: break-word;
-    white-space: normal;
+  font-size: 15px;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .rodape-card p {
-    font-size: 12px;
-    font-weight: 400;
+  font-size: 12px;
+  font-weight: 400;
 }
 
-
-
+.bloco-setor-fiscal1 {
+  background-color: blue;
+}

@@ -1,102 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV Sperotto Conecta</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!----Font Awesome CDN----->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Sperotto Conecta</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!----Font Awesome CDN----->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Menu Lateral de Navegação-->
-    <nav aria-label="Menu Lateral de Navegação" id="menu" class="aba-navegacao">
-        <div class="menu-logo">
-            <img src="https://sperotto.com.br/eventos/uploads/event/logo_1_630759547c5ff.png" alt="Logo da empresa">
-        </div>
+  <!--Menu Lateral de Navegação-->
+  <nav aria-label="Menu Lateral de Navegação" id="menu" class="aba-navegacao">
+    <div class="menu-logo">
+      <img src="https://sperotto.com.br/eventos/uploads/event/logo_1_630759547c5ff.png" alt="Logo da empresa">
+    </div>
 
-        <div class="usuario-info">
-            <i class="fa-regular fa-circle-user"></i>
-            <p class="nome-usuario">Nome de Usuário</p>
-            <p class="departamento">Departamento Local</p>
-        </div>
+    <div class="usuario-info">
+      <i class="fa-regular fa-circle-user"></i>
+      <p class="nome-usuario">Nome de Usuário</p>
+      <p class="departamento">Departamento Local</p>
+    </div>
 
-        <ul class="botoes-menu">
-            <li>
-                <a href="#">
-                    <i class="fa-regular fa-folder"></i>
-                    Conteúdos Gerais
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    Modelos Prontos
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-regular fa-calendar"></i>
-                    Calendário
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-people-group"></i>
-                    TV RH
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    TV Fiscal 1
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-chart-pie"></i>
-                    TV Fiscal 2
-                </a>
-            </li>
-        </ul>
-        
-        <!--Rodapé do Menu com saída-->
-        <div class="rodape-menu">
-            <a aria-label="Sair da conta" href="tela_de_login.html" class="botao-sair">
-                <i class="fas fa-sign-out-alt" aria-hidden="true"></i> Sair
-            </a>
-        </div>
-    </nav>
+    <ul class="botoes-menu">
+      <li>
+        <a href="#">
+          <i class="fa-regular fa-folder"></i>
+          Conteúdos Gerais
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Modelos Prontos
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-regular fa-calendar"></i>
+          Calendário
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-people-group"></i>
+          TV RH
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-chart-simple"></i>
+          TV Fiscal 1
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-chart-pie"></i>
+          TV Fiscal 2
+        </a>
+      </li>
+    </ul>
 
-    <main>
-        <section class="geral">
-            <header class="cabecalho">
-                <h1>Geral</h1>
-                <div class="elementos-cabecalho">
-                    <i class="fa-solid fa-play"></i>
-                    <i class="fa-solid fa-trash"></i>
-                </div>
-            </header>
-        </section>
-        <section class="slides-RH">
-            <h2>RH</h2>
-            <div class="card">
-                <div class="topo-card">
-                <span class="numero">01</span>
-                <div class="acoes">
-                    <i class="fa-solid fa-eye"></i>
-                    <i class="fa-solid fa-pencil"></i>
-                    <i class="fa-solid fa-calendar-days"></i>
-                </div>
-                </div>
-                <div class="rodape-card">
-                <h3>Título da Publicação</h3>
-                <p>(Tipo)</p>
-                </div>
+    <!--Rodapé do Menu com saída-->
+    <div class="rodape-menu">
+      <a aria-label="Sair da conta" href="tela_de_login.html" class="botao-sair">
+        <i class="fas fa-sign-out-alt" aria-hidden="true"></i> Sair
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="geral">
+      <header class="cabecalho">
+        <h1>Geral</h1>
+        <div class="elementos-cabecalho">
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </header>
+    </section>
+
+    <hr class="linha-setor">
+
+    <section class="slides">
+
+      <!-- Setor RH -->
+      <section class="bloco-setor" data-setor="RH">
+        <h2>RH</h2>
+        <div class="container-cards">
+          <!-- Card -->
+          <div class="card" data-numero="01" data-titulo="Título da Publicação" data-tipo="(Tipo)">
+            <div class="topo-card">
+              <span class="numero">01</span>
+              <div class="acoes">
+                <i class="fa-solid fa-pencil"></i>
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
             </div>
-        </section>
-    </main>
+            <div class="rodape-card">
+              <h3>Título da Publicação</h3>
+              <p>(Tipo)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="linha-setor">
+
+      <!-- Setor Fiscal 1 -->
+      <section class="bloco-setor" data-setor="Fiscal1">
+        <h2>Fiscal 1</h2>
+        <div class="container-cards">
+          <!-- Card -->
+          <div class="card" data-numero="01" data-titulo="Título da Publicação" data-tipo="(Tipo)">
+            <div class="topo-card">
+              <span class="numero">01</span>
+              <div class="acoes">
+                <i class="fa-solid fa-pencil"></i>
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+            </div>
+            <div class="rodape-card">
+              <h3>Título da Publicação</h3>
+              <p>(Tipo)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="linha-setor">
+
+      <!-- Setor Fiscal 2 -->
+      <section class="bloco-setor" data-setor="Fiscal2">
+        <h2>Fiscal 2</h2>
+        <div class="container-cards">
+          <!-- Card -->
+          <div class="card" data-numero="01" data-titulo="Título da Publicação" data-tipo="(Tipo)">
+            <div class="topo-card">
+              <span class="numero">01</span>
+              <div class="acoes">
+                <i class="fa-solid fa-pencil"></i>
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+            </div>
+            <div class="rodape-card">
+              <h3>Título da Publicação</h3>
+              <p>(Tipo)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+  </main>
 </body>
 </html>
