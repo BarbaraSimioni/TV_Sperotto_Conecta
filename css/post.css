@@ -1,4 +1,3 @@
-
 body {
   background-color: #D9D9D9;
 }
@@ -148,9 +147,9 @@ section.header .cabecalho {
   margin: 4px 0;
   width: 100%;
 }
-/*Setor de Cards*/
+
 .bloco-setor {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .bloco-setor h2 {
@@ -183,7 +182,8 @@ section.header .cabecalho {
 /*Cabeçalho do Card*/
 .topo-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
   padding: 12px 12px;
 }
 
@@ -214,8 +214,4 @@ section.header .cabecalho {
 .rodape-card p {
   font-size: 12px;
   font-weight: 400;
-}
-
-.bloco-setor-fiscal1 {
-  background-color: blue;
 }
