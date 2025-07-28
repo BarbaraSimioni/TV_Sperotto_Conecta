@@ -98,6 +98,30 @@ body {
   transform: scaleX(-1);
 }
 
+/*Botão Adicionar*/
+.botao-adicionar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 70px;
+  margin-top: 20px;
+  width: 150px;
+  max-width: 292px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 60px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #A7A7A7;
+  transition: background-color 0.3s;
+}
+
+.botao-adicionar:hover {
+  background-color: #928f8f;
+}
+
 /*Conteúdo Principal*/
 main {
   margin-left: 280px;
@@ -161,17 +185,19 @@ section.header .cabecalho {
 
 /*Cards*/
 .container-cards {
-  display: flex;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(292px, 292px));
+  margin: 40px;
+  column-gap: 100px;
+  row-gap: 40px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 292px;
+  width: 100%;
+  max-width: 292px;
   height: 220px;
   background-color: #fff;
   border-radius: 8px;
