@@ -25,7 +25,7 @@
 
     <ul class="botoes-menu">
       <li>
-        <a href="index.html">
+        <a href="home.html">
           <i class="fa-regular fa-folder"></i>
           Conteúdos Gerais
         </a>
@@ -88,89 +88,30 @@
 
       <section class="bloco-setor" data-setor="RH">
 
-        <div class="container-cards">
+        <div id="cardsContainer" class="container-cards">
           <!--Botão Adicionar-->
-          <button class="botao-adicionar" aria-label="Botão de Adicionar Slides">
+          <label  for="fileInput" class="botao-adicionar" aria-label="Botão de Adicionar Slides">
             <i class="fa-solid fa-plus"></i>
-          </button>
+          </label>
+          <input type="file" id="fileInput" accept="image/*" style="display: none">
           <!-- Card -->
-          <div class="card" data-titulo="Título da Publicação" data-tipo="(Tipo)">
+          <div class="card" data-titulo="Título da Publicação">
             <div class="topo-card">
               <div class="acoes">
                 <i class="fa-solid fa-calendar-days"></i>
               </div>
             </div>
-            <div class="rodape-card">
-              <h3>Título da Publicação</h3>
-              <p>(Tipo)</p>
+            <div class="card-footer">
+              <span class="card-title"><h3>Título da Publicação</h3></span>
             </div>
           </div>
-
-          <div class="card" data-titulo="Título da Publicação" data-tipo="(Tipo)">
-            <div class="topo-card">
-              <div class="acoes">
-                <i class="fa-solid fa-calendar-days"></i>
-              </div>
-            </div>
-            <div class="rodape-card">
-              <h3>Título da Publicação</h3>
-              <p>(Tipo)</p>
-            </div>
-          </div>
-
-          <div class="card" data-titulo="Título da Publicação" data-tipo="(Tipo)">
-            <div class="topo-card">
-              <div class="acoes">
-                <i class="fa-solid fa-calendar-days"></i>
-              </div>
-            </div>
-            <div class="rodape-card">
-              <h3>Título da Publicação</h3>
-              <p>(Tipo)</p>
-            </div>
-          </div>
-
-          <div class="card" data-titulo="Título da Publicação" data-tipo="(Tipo)">
-            <div class="topo-card">
-              <div class="acoes">
-                <i class="fa-solid fa-calendar-days"></i>
-              </div>
-            </div>
-            <div class="rodape-card">
-              <h3>Título da Publicação</h3>
-              <p>(Tipo)</p>
-            </div>
-          </div>
-
-          <div class="card" data-titulo="Título da Publicação" data-tipo="(Tipo)">
-            <div class="topo-card">
-              <div class="acoes">
-                <i class="fa-solid fa-calendar-days"></i>
-              </div>
-            </div>
-            <div class="rodape-card">
-              <h3>Título da Publicação</h3>
-              <p>(Tipo)</p>
-            </div>
-          </div>
-          
-          <div class="card" data-titulo="Título da Publicação" data-tipo="(Tipo)">
-            <div class="topo-card">
-              <div class="acoes">
-                <i class="fa-solid fa-calendar-days"></i>
-              </div>
-            </div>
-            <div class="rodape-card">
-              <h3>Título da Publicação</h3>
-              <p>(Tipo)</p>
-            </div>
-          </div>
-
-
 
         </div>
       </section>
 
   </main>
+
+  <script src="script.js"></script>
+
 </body>
 </html>

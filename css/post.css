@@ -214,13 +214,18 @@ section.header .cabecalho {
 }
 
 .topo-card .acoes {
-  display: flex;
-  gap: 8px;
   font-size: 12px;
 }
 
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+
+}
+
 /*Rodapé do Card*/
-.rodape-card {
+.card-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,13 +236,10 @@ section.header .cabecalho {
   border-bottom-right-radius: 8px;
 }
 
-.rodape-card h3 {
-  font-size: 15px;
-  word-wrap: break-word;
-  white-space: normal;
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.rodape-card p {
-  font-size: 12px;
-  font-weight: 400;
-}
+
+

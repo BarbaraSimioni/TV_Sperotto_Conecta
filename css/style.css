@@ -18,7 +18,7 @@ body {
   align-items: center;
   position: fixed;
   background-color: #2C2C2C;
-  width: 280px;
+  width: 248px;
   height: 100vh;
 }
 
@@ -216,6 +216,3 @@ section.header .cabecalho {
   font-weight: 400;
 }
 
-.bloco-setor-fiscal1 {
-  background-color: blue;
-}
