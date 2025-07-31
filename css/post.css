@@ -104,7 +104,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 70px;
+  margin: auto;
   margin-top: 20px;
   width: 150px;
   max-width: 292px;
@@ -114,12 +114,12 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  background-color: #A7A7A7;
+  background-color: #4091c7;
   transition: background-color 0.3s;
 }
 
 .botao-adicionar:hover {
-  background-color: #928f8f;
+  background-color: #1570ad;
 }
 
 /*Conteúdo Principal*/
