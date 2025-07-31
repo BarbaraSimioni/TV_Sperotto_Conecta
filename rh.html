@@ -88,11 +88,29 @@
       <section class="bloco-setor" data-setor="RH">
 
         <div id="cardsContainer" class="container-cards">
+
+
           <!--Botão Adicionar-->
-          <label  for="fileInput" class="botao-adicionar" aria-label="Botão de Adicionar Slides">
+          <label id="abrir" class="botao-adicionar">
             <i class="fa-solid fa-plus"></i>
           </label>
-          <input type="file" id="fileInput" accept="image/*" style="display: none">
+          
+          <div id="overlay" class="overlay">
+            <div class="conteudo">
+                <button id="fechar" class="botao-fechar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Tipo de Publicação</h2>
+                <div class="botoes">
+                    <label for="fileInput" class="btn-up" aria-label="Botão para puxar arquivos do sistema">
+                        <i class="fa-solid fa-image"></i>
+                        Uploads
+                    </label>
+                    <input type="file" id="fileInput" accept="image/*"" style="display: none">
+                </div>
+            </div>
+          </div>
+
           <!-- Card -->
           <div class="card" data-titulo="Título da Publicação">
             <div class="topo-card">
@@ -109,8 +127,7 @@
       </section>
 
   </main>
-
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
