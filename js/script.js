@@ -1,38 +1,34 @@
-const btnAbrir = document.getElementById('abrir');
-const btnFechar = document.getElementById('fechar');
+const abrir = document.getElementById('abrir');
+const fechar = document.getElementById('fechar');
 const overlay = document.getElementById('overlay');
 const fileInput = document.getElementById('fileInput');
 const cardsContainer = document.getElementById('cardsContainer');
 
-btnAbrir.addEventListener('click', () => {
-  overlay.classList.add('mostrar');
+const toggleOverlay = (show) => {
+  overlay.classList.toggle('mostrar', show);
+};
+
+const criarCard = (imgSrc) => {
+  const card = document.createElement('div');
+  card.classList.add('card');
+  card.innerHTML = `
+    <img src="${imgSrc}" alt="Imagem da publicação" class="card-img"/>
+    <div class="card-footer"></div>
+  `;
+  cardsContainer.appendChild(card);
+};
+
+abrir.addEventListener('click', () => toggleOverlay(true));
+fechar.addEventListener('click', () => toggleOverlay(false));
+overlay.addEventListener('click', (e) => {
+  if (e.target === overlay) toggleOverlay(false);
 });
 
-btnFechar.addEventListener('click', () => {
-  overlay.classList.remove('mostrar');
-});
-
-overlay.addEventListener('click', function (e) {
-  if (e.target === overlay) {
-    overlay.classList.remove('mostrar');
-  }
-});
-
-fileInput.addEventListener('change', function () {
-  const file = this.files[0]; // CORRIGIDO: "files" no plural
+fileInput.addEventListener('change', () => {
+  const file = fileInput.files[0];
   if (file) {
     const reader = new FileReader();
-    reader.onload = function (e) {
-      const card = document.createElement('div');
-      card.classList.add('card');
-      card.innerHTML = `
-        <img src="${e.target.result}" alt="Imagem da Publicação" class="card-img"/>
-        <div class="card-footer">
-          <h3 class="card-title">Título da Publicação</h3>
-        </div>
-      `;
-      cardsContainer.appendChild(card); // Adiciona novo card ao container
-    };
-    reader.readAsDataURL(file); // CORRIGIDO: "file", não "fie"
+    reader.onload = (e) => criarCard(e.target.result);
+    reader.readAsDataURL(file);
   }
 });
