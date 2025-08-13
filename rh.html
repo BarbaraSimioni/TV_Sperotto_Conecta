@@ -76,8 +76,7 @@
       <header class="cabecalho">
         <h1>TV RH</h1>
         <div class="elementos-cabecalho">
-          <i class="fa-solid fa-pencil"></i>
-          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-play" id="play"></i>
           <i class="fa-solid fa-trash"></i>
         </div>
       </header>
@@ -86,15 +85,14 @@
     <hr class="linha-setor">
 
       <section class="bloco-setor" data-setor="RH">
-
         <div id="cardsContainer" class="container-cards">
-
-
           <!-- Botão Adicionar -->
           <button id="abrir" class="botao-adicionar" aria-label="Adicionar publicação">
             <i class="fa-solid fa-plus"></i>
           </button>
           
+        </div>
+
           <!-- Overlay -->
           <div id="overlay" class="overlay">
             <div class="conteudo">
@@ -110,14 +108,16 @@
                     <input type="file" id="fileInput" accept="image/*" style="display: none">
                 </div>
             </div>
-          </div>
-
-          <!-- Cards -->
-           <div id="cardsContainer" class="container-cards"></div>
-           
+          </div>    
       </section>
 
   </main>
+
+  <!-- Modo paisagem -->
+  <div id="fullscreenViewer" class="tela-cheia">
+    <img id="fullscreenImage" src="" alt="">
+  </div>
+
   <script src="js/script.js"></script>
 
 </body>
