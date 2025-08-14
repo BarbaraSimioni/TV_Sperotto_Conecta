@@ -163,13 +163,22 @@ section.header .cabecalho {
   border-radius: 8px;
 }
 
-.elementos-cabecalho i {
+.play-btn i {
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-.elementos-cabecalho i:hover {
+.play-btn i:hover {
   color: rgb(182, 182, 182);
+}
+
+.cesto-lixo.ativo {
+  transform: scale(1.2) rotate(-15deg);
+}
+
+.cesto-lixo.ativo i {
+  transform: translateY(-5px) rotate(-15deg);
+  transition: transform 0.3s ease;
 }
 
 /*Linha divisória*/
@@ -247,6 +256,12 @@ section.header .cabecalho {
   background-color: #67BCD9;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.card.arrastando {
+  opacity: 0.5;
+  transform: scale(0.95);
+  cursor: grab;
 }
 
 
